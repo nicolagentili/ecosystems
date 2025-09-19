@@ -1,0 +1,2 @@
+# ecosystems
+Business ecosystem conceptualization
