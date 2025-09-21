@@ -1,94 +1,9 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <title>Struttura 3D Navigabile</title>
-    <style>
-        body { margin: 0; font-family: sans-serif; overflow: hidden; }
-        canvas { display: block; }
-        .configPanel {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            display: none;
-            z-index: 100;
-            width: 250px;
-        }
-        .configPanel h4 { margin-top: 0; border-bottom: 1px solid #ccc; padding-bottom: 5px; }
-        .configPanel label { display: block; margin-top: 10px; font-weight: bold; }
-        .configPanel input, .configPanel select, .configPanel button { width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; }
-        
-        /* NUOVO STILE PER I CONTROLLI DI SALVATAGGIO/CARICAMENTO */
-        .io-controls {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 100;
-            display: flex;
-            gap: 10px;
-        }
-        .io-controls button, .io-controls label {
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-family: sans-serif;
-            font-size: 14px;
-        }
-        .io-controls button:hover, .io-controls label:hover {
-            background-color: #e0e0e0;
-        }
-        .io-controls input[type="file"] {
-            display: none; /* Nascondiamo l'input file di default */
-        }
-    </style>
+	Innovation framework
 </head>
 <body>
-
-    <div class="io-controls">
-        <button id="saveButton">Salva Ambiente</button>
-        <label for="loadInput">Carica Ambiente</label>
-        <input type="file" id="loadInput" accept=".json">
-    </div>
-
-    <div id="cubeConfigPanel" class="configPanel">
-        <h4>Configura Cubo</h4>
-        <label for="cubeName">Nome:</label>
-        <input type="text" id="cubeName">
-        <label for="cubeColor">Colore:</label>
-        <input type="color" id="cubeColor">
-        <label for="cubeSize">Dimensione:</label>
-        <input type="range" id="cubeSize" min="0.5" max="5" step="0.1">
-        <button id="cubeOkButton">OK</button>
-    </div>
-
-    <div id="tubeConfigPanel" class="configPanel">
-        <h4>Configura Tubo</h4>
-        <label for="tubeLabel">Label:</label>
-        <input type="text" id="tubeLabel">
-        <label for="tubeIntensity">Intensità Flusso:</label>
-        <input type="range" id="tubeIntensity" min="1" max="100" step="1">
-        <label for="tubeStart">Da:</label>
-        <select id="tubeStart"></select>
-        <label for="tubeEnd">A:</label>
-        <select id="tubeEnd"></select>
-        <button id="tubeOkButton">OK</button>
-        <button id="tubeInvertButton">Inverti</button>
-    </div>
-
-    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
-    <script type="importmap">
-        {
-          "imports": {
-            "three": "https://unpkg.com/three@0.149.0/build/three.module.js",
-            "three/addons/": "https://unpkg.com/three@0.149.0/examples/jsm/" 
-          }
-        }
-    </script>
-    <script type="module" src="app.js"></script>
+	<a href='business_ecosystems\index.html'>Business Ecosystems</a>
+	<a href='value_process\index.html'>Value Process</a>
 </body>
 </html>
